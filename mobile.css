@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar #logo img{
+    height: 75px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 5px 20px;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px;
+    /* border-radius: 5px; */
+}
+
+#navbar ul li a:hover, #navbar ul li a:active{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}  
+
+
+#home{
+    
+    padding: 5px ;
+}
+
+#home::before{
+    height: 700px;
+
+}
+
+#services{
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    margin: 10px;
+    border: 2px solid brown;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px ;
+    background-color: whitesmoke;
+    width: 70%;
+}
+
+.box img{
+    height: 100px;
+}
+
+.box p{
+    font-size: 1rem;
+
+}
+
+#clients-section{
+    margin: 10px;
+    
+}
+
+#clients{
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client img{
+    height: 200px;
+}
+
+
+
+#contacts form{
+    width: 70%;
+}
+
+#form-section{
+    width: 100vw;
+}
+
+.form-group{
+    width: 100%;
+    padding: 8px;
+}
+
+.form-group input{
+    
+    font-size: 1rem;
+    
+}
+
+.form-group label{
+    
+    font-size: 1rem;
+}
+
+#contacts form button{
+    padding: 5px;
+    margin-left: 50%;
+    font-size: 1rem;
+}
+
+footer{
+    margin: 5px 0px;
+    padding: 10px 0px;
+    font-size: 1rem;
+}
+
+.h-primary{
+    font-size: 1.5rem;
+}
+
+.para{
+    font-size: 1rem;
+    padding: 2px ;
+    
+}
+
+.btn{
+    padding: 10px ;
+    font-size: 1rem;
+
+}
+
+.h-secondary{
+    font-size: 1.3rem;
+}

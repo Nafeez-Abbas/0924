@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+}
+
+#navbar::before{
+    content: "";
+    /* display: flex;  */
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+} 
+
+ #navbar #logo img{
+    height: 95px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 5px 20px;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    display: block;
+    border-radius: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 10px;
+}
+
+ #navbar ul li a:hover, #navbar ul li a:active{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}  
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 704px;
+    padding: 50px ;
+}
+
+#home::before{
+    content: "";
+    background: url(home.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 800px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.55;
+
+}
+
+/* Services section  */
+
+#services-container{
+    margin-top: 30px;
+}
+
+#services{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.box{
+    margin: 10px 30px;
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 40px 40px;
+    background-color: whitesmoke;
+    width: 33%;
+}
+
+
+.box img{
+    height: 130px;
+}
+
+.box p{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.1rem;
+
+}
+
+/* Clients section */
+#clients-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    /* border: 2px solid black; */
+}
+
+
+#clients{
+    display: flex;
+    margin: 20px;
+}
+
+.client img{
+    height: 300px;
+}
+
+/* Contact section */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact::before{
+    content: "";
+    background: url(contact.jpg);
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#contacts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group{
+    width: 80%;
+    padding: 10px;
+}
+
+.form-group input{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 8px;
+    padding: 2px 5px;
+}
+
+.form-group label{
+    display: block;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+}
+
+.form-group textarea{
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#contacts form button{
+    padding: 10px 25px;
+    color: white;
+    margin: 5px 4%;
+    background-color: rgb(125, 134, 211);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.1rem;
+}
+
+/* Footer  */
+
+footer{
+    color: white;
+    background-color: rgb(125, 134, 211);
+    text-align: center;
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+
+/* Utility Classes */
+
+.center{
+    text-align: center;
+}
+
+.h-primary{
+    color: black;
+    font-size: 3.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.para{
+    font-size: 1.3rem;
+    padding: 10px ;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* color: white; */
+}
+
+.btn{
+    padding: 10px 22px;
+    color: white;
+    background-color: rgb(189, 99, 99);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn:hover{
+    background-color: rgb(177, 76, 76);
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
